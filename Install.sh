@@ -174,7 +174,7 @@ menuentry "rEFInd Boot Manager" {
     insmod fat
     insmod chain
     search --no-floppy --fs-uuid --set=root $hints_string $uuid
-    chainloader /EFI/refind/refind_x64.efi
+    chainloader /EFI/refind/bootx64.efi
 }
 EOF
     
